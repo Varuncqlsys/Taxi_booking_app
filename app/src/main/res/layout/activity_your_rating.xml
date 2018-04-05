@@ -1,0 +1,255 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/toolbar_layout">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow"
+            android:layout_centerVertical="true"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Rating"
+            android:textSize="@dimen/textsize_sp18"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/user_data"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/05/2017"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp20"
+                    android:layout_marginLeft="@dimen/margin_dp10"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="at"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp20"
+                    android:layout_toRightOf="@+id/date_text"
+                    android:layout_alignTop="@+id/date_text"
+                    android:layout_marginLeft="@dimen/margin_dp8"/>
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:46"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp20"
+                    android:layout_toRightOf="@+id/text"
+                    android:layout_alignTop="@+id/date_text"
+                    android:layout_marginLeft="@dimen/margin_dp8"/>
+
+            </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/map_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/map"
+                    android:scaleType="fitXY"
+                    android:layout_below="@+id/user_data"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/proimg"
+                android:layout_marginTop="240dp"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <RelativeLayout
+                    android:id="@+id/user_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_dp20"
+                    android:layout_below="@+id/map_pic">
+
+                    <TextView
+                        android:id="@+id/leave_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YOU RATED"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="@dimen/textsize_sp15"
+                        android:layout_marginLeft="@dimen/margin_dp30"/>
+
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/leave_rating"
+                        android:scaleX="0.3"
+                        android:scaleY="0.3"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="10dp"
+                        android:layout_alignLeft="@+id/leave_rating"
+                        android:rating="5"/>
+
+                <TextView
+                    android:id="@+id/trip_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRIP TOTAL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_dp30"/>
+
+                <TextView
+                    android:id="@+id/trip_total_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rs168.55"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp15"
+                    android:layout_alignLeft="@+id/trip_total"
+                    android:layout_below="@+id/trip_total"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SURINDER"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp15"
+                    android:layout_below="@+id/rating_bar"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                        android:id="@+id/help_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEED HELP?"
+                        android:layout_below="@+id/username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_dp5"
+                    android:background="@drawable/textview_layout"
+                    android:paddingLeft="@dimen/padding_dp20"
+                    android:paddingRight="@dimen/padding_dp20"
+                    android:paddingTop="@dimen/padding_dp15"
+                    android:paddingBottom="@dimen/padding_dp15"/>
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_rating"
+                android:layout_marginTop="@dimen/margin_dp20">
+
+            <TextView
+                android:id="@+id/trip_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trip Fare"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="@dimen/textsize_sp20"
+                android:layout_marginLeft="@dimen/margin_dp20"/>
+
+                <TextView
+                    android:id="@+id/trip_fare_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="168.55"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp20"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_dp20"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_below="@+id/trip_fare_text"
+                    android:layout_marginTop="@dimen/margin_dp20"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/paytm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fare"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:layout_marginBottom="@dimen/margin_dp15">
+
+                <TextView
+                    android:id="@+id/paytm_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAYTM"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp14"
+                    android:layout_marginLeft="@dimen/margin_dp20"
+                    android:layout_alignTop="@+id/paytm_fare"/>
+
+                <TextView
+                    android:id="@+id/paytm_rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RS"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp14"
+                    android:layout_toLeftOf="@+id/paytm_fare"
+                    android:layout_alignBottom="@+id/paytm_fare"
+                    android:layout_marginBottom="@dimen/margin_dp2"
+                    android:layout_marginRight="@dimen/margin_dp2"/>
+
+                <TextView
+                    android:id="@+id/paytm_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="168.55"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp20"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_dp20"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

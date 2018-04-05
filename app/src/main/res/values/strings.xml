@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Taxi Live Driver</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="fragment_home">Welcome \nTo \nMonday Night</string>
+    <string name="permission">Please give the permissions</string>
+
+    <string name="home">Home</string>
+    <string name="event">Events</string>
+    <string name="search">Search</string>
+    <string name="qr">Qr scan</string>
+    <string name="donate">Donate</string>
+    <string name="profile">Profile</string>
+    <string name="forgot_your_password"><u>Forgot Password?</u></string>
+    <string name="email_address">Email address</string>
+    <string name="reset">Reset Password</string>
+    <string name="resend">Resend</string>
+
+    <string name="passenger_feedback"><b>Passenger feedback</b>\n\nTop Reported Issues\nCleanliness</string>
+    <string name="expert_advice"><b>Expert advice</b>\n\nGet going with our expert advice\nto help you improve your skills</string>
+    <string name="weekly_reports"><b>Weekly reports</b>\n\nMost recent report:\n8 Nov - 15 Nov</string>
+    <string name="verify_identity">Verify Identity</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username_email">UserName / Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="otp">OTP</string>
+    <string name="please_enter_otp">Please Enter OTP</string>
+    <string name="password">Password</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="enter_your_password">Please Enter Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or">OR</string>
+    <string name="continue_">Continue</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="city">City</string>
+    <string name="invite_code">(Optional) Invite Code</string>
+    <string name="enter_email">Enter your Email</string>
+    <string name="vehicle_no">Vehicle Number</string>
+    <string name="model">Model</string>
+    <string name="make">Make</string>
+    <string name="year">Year</string>
+    <string name="passenger_feedback_title"><b>Passenger feedback</b></string>
+    <string name="passenger_feedback_text">Top Reported Issues\nCleanliness</string>
+
+    <string name="expert_advice_title"><b>Expert advice</b></string>
+    <string name="expert_advice_text">Get going with our expert advice\nto help you improve your skills</string>
+
+    <string name="weekly_reports_title"><b>Weekly reports</b></string>
+    <string name="weekly_reports_text">Most recent report:\n8 Nov - 15 Nov</string>
+    <string name="upload_personal_document">Please upload your personal documents </string>
+    <string name="upload_vehicle_document">Please upload your vehicle documents </string>
+
+    <string name="event_title"><b>Please upload your personal Documents</b>\n\n<b>Please upload your Vehicle Documents</b>\n\nLorem Ipsum has been the industry standard dummy text ever since the when an unknown printer took a galley of type and scrambled it </string>
+    <string name="document_photo_text">Please upload the document by taking a picture</string>
+
+    <string name="welcome_title">Please Choose how you would\nlike to partner with Taxi Live</string>
+
+    <string name="bio">Lorem Ipsum has been the industry standard dummy text ever since the when an unknown printer took a galley of type and scrambled Lorem Ipsum has been the industry standard dummy text ever since the when an unknown printer took a galley of type</string>
+    <string name="verification_required">Verification Required</string>
+    <string name="verification_text">Welcome to Taxi Live Africa , ride on demand.If you are a registered driver please login using your secret registered email address and password. Should you wish to be come our driver partner ,kindly sign up with us today and wait for your driver\'s approval.Turn around time is seven working days.  </string>
+
+
+</resources>

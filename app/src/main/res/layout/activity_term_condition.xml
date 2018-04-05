@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:id="@+id/welcome_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_dp25"
+        android:layout_marginLeft="@dimen/margin_dp30"
+        android:layout_marginRight="@dimen/margin_dp30">
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEGAL CONSENT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_sp35"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_in_line"
+            android:layout_toRightOf="@+id/welcome_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_dp20"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/welcome_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:layout_above="@+id/accept"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_title"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="@color/gray"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            ></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bio"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/i_accept_btn"
+        android:gravity="center"
+        android:layout_above="@+id/view"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_above="@+id/signout"
+        />
+
+    <TextView
+        android:id="@+id/signout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Sign Out"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:drawableRight="@drawable/next"
+        android:drawablePadding="20dp"
+        android:layout_marginRight="30dp"
+        />
+
+</RelativeLayout>

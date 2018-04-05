@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="bank_name">
+        <item>ABSA Bank</item>
+        <item>Bank of Athens</item>
+        <item>Bidvest Bank</item>
+        <item>Capitec Bank</item>
+        <item>FNB</item>
+        <item>Investec Private Bank</item>
+        <item>Nedbank</item>
+        <item>SA Post Bank</item>
+        <item>Standard Bank</item>
+    </array>
+
+    <array name="city_name">
+        <item>Blomfontein</item>
+        <item>cape_town</item>
+        <item>Durban</item>
+        <item>East London</item>
+        <item>Johannesburg</item>
+        <item>Port Elizabeth</item>
+        <item>Queenstown</item>
+        <item>Worcester</item>
+    </array>
+</resources>

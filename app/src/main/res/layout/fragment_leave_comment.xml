@@ -1,0 +1,187 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_data"
+            android:background="@drawable/textview_layout"
+            android:layout_marginLeft="@dimen/margin_dp2"
+            android:layout_marginRight="@dimen/margin_dp2"
+            android:layout_marginTop="@dimen/margin_dp2">
+
+    <ImageView
+        android:id="@+id/map_pic"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@drawable/map"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/margin_dp10"
+        android:layout_marginRight="@dimen/margin_dp10"
+        android:layout_marginTop="@dimen/margin_dp10" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp10"
+                android:layout_marginRight="@dimen/margin_dp10"
+                android:layout_below="@+id/map_pic">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/proimg"
+                    android:layout_marginTop="@dimen/margin_dp10"
+                    android:layout_marginRight="@dimen/margin_dp5"
+                    android:layout_marginLeft="@dimen/margin_dp5"
+                    android:layout_marginBottom="@dimen/margin_dp10"/>
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/05/2017"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:layout_toRightOf="@+id/profile_pic"
+                    android:layout_alignTop="@+id/profile_pic"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="at"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:layout_toRightOf="@+id/date_text"
+                    android:layout_alignTop="@+id/date_text"
+                    android:layout_marginLeft="@dimen/margin_dp8"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:46"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:layout_toRightOf="@+id/text"
+                    android:layout_alignTop="@+id/date_text"
+                    android:layout_marginLeft="@dimen/margin_dp8"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/bill_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="168.55"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/textsize_sp16"
+                    android:layout_alignTop="@+id/date_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_dp7"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/car_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Honda Amaze"
+                    android:textSize="@dimen/textsize_sp14"
+                    android:layout_toRightOf="@+id/profile_pic"
+                    android:layout_below="@+id/date_text"
+                    android:layout_marginTop="@dimen/margin_dp5"
+                    android:layout_alignLeft="@+id/date_text"/>
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_dp20"
+        android:layout_below="@+id/user_data">
+
+        <TextView
+            android:id="@+id/leave_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Rating"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp18"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_dp20"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leave_rating"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:transformPivotX="30dp"
+            android:transformPivotY="20dp" />
+
+
+
+        <TextView
+            android:id="@+id/leave_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Comment"
+            android:layout_below="@+id/rating_bar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp18"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_dp20" />
+
+        <EditText
+            android:id="@+id/leave_comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/leave_comment"
+            android:layout_below="@+id/leave_comment"
+            android:padding="@dimen/padding_dp10"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/textsize_sp18"
+            android:textColor="@color/gray"
+            android:maxLines="8"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginRight="@dimen/margin_dp10"/>
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_sp18"
+            android:background="@drawable/dialog1_bg"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_below="@+id/leave_comment_text"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="@dimen/margin_dp30"/>
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>

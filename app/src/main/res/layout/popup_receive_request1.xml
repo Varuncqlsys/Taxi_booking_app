@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leave_comment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginRight="@dimen/margin_dp20"
+            android:layout_marginTop="@dimen/margin_dp20"
+            android:text="TODAY'S TOTALS"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/textsize_sp18" />
+
+        <ImageView
+            android:id="@+id/total_text_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/total_text"
+            android:layout_marginRight="@dimen/margin_dp20"
+            android:src="@drawable/rite_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hour_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:layout_marginTop="@dimen/margin_dp20">
+
+        <TextView
+            android:id="@+id/hour_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sp20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp10"
+            android:layout_toRightOf="@+id/hour_text"
+            android:text="hours online"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_sp20" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/estimated_net_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/hour_layout"
+        android:layout_marginRight="@dimen/margin_dp10"
+        android:text="Rs 140.43 "
+        android:textColor="@color/green"
+        android:textSize="@dimen/textsize_sp30" />
+
+    <TextView
+        android:id="@+id/trip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hour_layout"
+        android:layout_marginLeft="@dimen/margin_dp20"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_sp20"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hour_layout"
+        android:layout_marginLeft="@dimen/margin_dp10"
+        android:layout_toRightOf="@+id/trip_text"
+        android:text="trips"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_sp20" />
+
+    <TextView
+        android:id="@+id/estimated_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/estimated_net_text"
+        android:layout_marginBottom="@dimen/margin_dp8"
+        android:layout_marginRight="@dimen/margin_dp20"
+        android:text="ESTIMATED NET"
+        android:textSize="@dimen/textsize_sp16" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/navigation_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#120E0F"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/cross"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_dp10"
+        android:layout_marginTop="@dimen/margin_dp10" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/proimg"
+        android:layout_below="@+id/cross"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Michle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="21sp"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_marginLeft="@dimen/margin_dp15"
+        android:layout_marginTop="@dimen/margin_dp50"/>
+
+    <ImageView
+        android:id="@+id/star_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_dp10"
+        android:layout_marginRight="@dimen/margin_dp10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.5"
+        android:textColor="@color/white"
+        android:id="@+id/rating_text"
+        android:textSize="@dimen/textsize_sp18"
+        android:layout_toLeftOf="@+id/star_rating"
+        android:layout_alignBottom="@+id/star_rating"
+        android:layout_marginRight="@dimen/margin_dp10"/>
+
+
+</RelativeLayout>

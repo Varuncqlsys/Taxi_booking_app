@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/navigation_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rsz_menu_bg"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/home_lay">
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:paddingStart="@dimen/padding_dp30"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/trip_history_layout">
+
+        <TextView
+            android:id="@+id/trip_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trip History"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:paddingStart="@dimen/padding_dp30"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/payment_layout">
+
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:paddingStart="@dimen/padding_dp30"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/help_layout">
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:paddingStart="@dimen/padding_dp30"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/setting_layout">
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:paddingStart="@dimen/padding_dp30"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/panic_layout">
+
+        <TextView
+            android:id="@+id/panic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panic"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:paddingStart="@dimen/padding_dp30"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/signout_layout">
+
+        <TextView
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="@dimen/textsize_sp16"
+            android:layout_marginTop="@dimen/margin_dp25"
+            android:paddingStart="@dimen/padding_dp30"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white_alpha">#8Cffffff</color>
+    <color name="divider_color">#B7A992</color>
+    <color name="gray">#7F7A6D</color>
+    <color name="light_gray">#FFF7F5F5</color>
+    <color name="gray_text">#F3F3F3</color>
+    <color name="username_background_screen">#C1B29A</color>
+    <color name="add_subject_background">#FFEECE</color>
+    <color name="my_profile">#FFF4D3</color>
+    <color name="yellow">#fedf4b</color>
+    <color name="darkyellow">#c9ac24</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="orange">#DC0700 </color>
+    <color name="green"> #32B00A</color>
+    <color name="colorPrimary">#00C6FF</color>
+    <color name="colorPrimaryDark">#1D2344</color>
+    <color name="colorAccent">#1D2344</color>
+
+    <color name ="blue">#0D63B2</color>
+</resources>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "810510016892",
+    "firebase_url": "https://taxilivedriver-5a22e.firebaseio.com",
+    "project_id": "taxilivedriver-5a22e",
+    "storage_bucket": "taxilivedriver-5a22e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810510016892:android:7af15654ddaead1a",
+        "android_client_info": {
+          "package_name": "com.taxilive_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810510016892-08flnr29m8auap278rrb4d1cddlincv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxilive_driver",
+            "certificate_hash": "b4c726e8b92f1c1e2029e2a7aaf31a7525d5b0b9"
+          }
+        },
+        {
+          "client_id": "810510016892-e0nsjg6gc0uiqjeg3s44m4ucmmbtciqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxilive_driver",
+            "certificate_hash": "bdcbb2bf20eeea89dbed70aad477548059ae459e"
+          }
+        },
+        {
+          "client_id": "810510016892-go1ub6p8kl8mbfg5i6e09ipcnu24rvgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGR1VvbF94tk9rvs0JUI6t705yOBO9ILU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810510016892-go1ub6p8kl8mbfg5i6e09ipcnu24rvgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/welcome_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_dp25"
+        android:layout_marginLeft="@dimen/margin_dp20"
+        android:layout_marginRight="@dimen/margin_dp20">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_sp45"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sign_in_line"
+        android:layout_toRightOf="@+id/welcome_text"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_dp20"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_sp22"
+        android:layout_below="@+id/welcome_layout"
+        android:layout_marginTop="@dimen/margin_dp25"
+        android:layout_marginLeft="@dimen/margin_dp20"
+        android:layout_marginRight="@dimen/margin_dp20"/>
+
+    <RelativeLayout
+        android:id="@+id/droppin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/leave_comment"
+        android:layout_below="@+id/title_text"
+        android:layout_marginTop="@dimen/margin_dp20"
+        android:layout_marginLeft="@dimen/margin_dp20"
+        android:layout_marginRight="@dimen/margin_dp20">
+
+        <TextView
+            android:id="@+id/droppin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Droppin"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize_sp30"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:layout_marginLeft="@dimen/margin_dp8"/>
+
+        <TextView
+            android:id="@+id/droppin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bio"
+            android:textSize="@dimen/textsize_sp20"
+            android:layout_below="@+id/droppin"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:layout_marginLeft="@dimen/margin_dp8"
+            android:layout_marginRight="@dimen/margin_dp8"
+            android:layout_marginBottom="@dimen/margin_dp20"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/non_driving_partner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/leave_comment"
+        android:layout_below="@+id/droppin_layout"
+        android:layout_marginTop="@dimen/margin_dp10"
+        android:layout_marginLeft="@dimen/margin_dp20"
+        android:layout_marginRight="@dimen/margin_dp20">
+
+        <TextView
+            android:id="@+id/non_driving_partner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non Driving Partner"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize_sp30"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:layout_marginLeft="@dimen/margin_dp8"/>
+
+        <TextView
+            android:id="@+id/non_driving_partner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/document_photo_text"
+            android:textSize="@dimen/textsize_sp20"
+            android:layout_below="@+id/non_driving_partner"
+            android:layout_marginTop="@dimen/margin_dp12"
+            android:layout_marginLeft="@dimen/margin_dp8"
+            android:layout_marginRight="@dimen/margin_dp8"
+            android:layout_marginBottom="@dimen/margin_dp20"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog1_bg"
+        android:text="CONTINUE"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_sp20"
+        android:layout_below="@+id/non_driving_partner_layout"
+        android:layout_marginTop="@dimen/margin_dp30"
+        android:layout_marginLeft="@dimen/margin_dp20"
+        android:layout_marginRight="@dimen/margin_dp20"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signout_layout"
+        android:layout_below="@+id/continue_btn">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/margin_dp30" />
+
+        <TextView
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_dp20"
+            android:layout_marginBottom="@dimen/textsize_sp20"
+            android:text="Sign Out"
+            android:textSize="@dimen/textsize_sp18"
+            android:layout_below="@+id/view"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginRight="@dimen/margin_dp20"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signout_image"
+            android:src="@drawable/next"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_dp30"
+            android:layout_alignTop="@+id/signout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    </ScrollView>

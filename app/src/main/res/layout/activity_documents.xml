@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/white">
+
+<RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/toolbar_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documents"
+            android:textSize="@dimen/textsize_sp20"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_dp20"/>
+
+    </RelativeLayout>
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6e6e6"
+            android:padding="@dimen/padding_dp20"
+            android:textSize="@dimen/textsize_sp20"
+            android:textColor="@color/black"
+            android:text="@string/upload_personal_document"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/identity_lay">
+
+            <TextView
+                android:id="@+id/identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Passport/Voter ID/ Aadhar Card"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/identity_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/identity"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/identity"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_photo">
+
+            <TextView
+                android:id="@+id/driver_photo_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Driver Photo"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_photo_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/driver_photo_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/driver_photo_text"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6e6e6"
+            android:padding="@dimen/padding_dp20"
+            android:textSize="@dimen/textsize_sp20"
+            android:textColor="@color/black"
+            android:text="@string/upload_vehicle_document"/>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_license_front">
+
+            <TextView
+                android:id="@+id/driver_license_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Driver License Front Photo"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_licensefront_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/driver_license_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/driver_license_text"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_license_back">
+
+            <TextView
+                android:id="@+id/driver_licenseback_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Vehicle Image"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_licenseback_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/driver_licenseback_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/driver_licenseback_text"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/police_verification_certificate">
+
+            <TextView
+                android:id="@+id/police_verification_certificate_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Vehicle inspection certificate"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/police_verification_certificate_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/police_verification_certificate_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/police_verification_certificate_text"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_permit">
+
+            <TextView
+                android:id="@+id/vehicle_permit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Operating permit/Optional"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vehicle_permit_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/vehicle_permit_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/vehicle_permit_text"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_insurance">
+
+            <TextView
+                android:id="@+id/vehicle_insurance_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Vehicle Insurance"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vehicle_insurance_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/vehicle_insurance_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/vehicle_insurance_text"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_registration">
+
+            <TextView
+                android:id="@+id/vehicle_registration_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_dp20"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_marginTop="@dimen/margin_dp20"
+                android:text="Registration Certificate"
+                android:textSize="@dimen/textsize_sp16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/vehicle_registration_image"
+                android:src="@drawable/rite_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_dp20"
+                android:layout_alignTop="@+id/vehicle_registration_text"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/vehicle_registration_text"
+                android:layout_marginTop="@dimen/margin_dp20"/>
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_dp20"
+            android:background="@drawable/dialog1_bg"
+            android:text="Continue"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

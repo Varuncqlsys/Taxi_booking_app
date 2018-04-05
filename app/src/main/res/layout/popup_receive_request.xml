@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/leave_comment"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/receive_request"
+       >
+
+        <TextView
+            android:id="@+id/receive_request_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginRight="@dimen/margin_dp20"
+            android:layout_marginTop="@dimen/margin_dp20"
+            android:text="You Have Received Request"
+            android:textSize="@dimen/textsize_sp18"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/rite_arrow"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/receive_request_image"-->
+            <!--android:src="@drawable/rite_arrow"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/margin_dp20"-->
+            <!--android:layout_alignTop="@+id/receive_request_text"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_dp20">
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_dp20"
+        android:text="6:49 AM"
+        android:textStyle="bold"
+        android:textSize="@dimen/textsize_sp20"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/estimated_net_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 8.24 "
+        android:textSize="@dimen/textsize_sp30"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_dp20"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_dp10"
+        android:layout_marginBottom="@dimen/margin_dp8">
+
+
+    <Button
+        android:id="@+id/accept_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="ACCEPT"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/margin_dp10"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/decline_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="DECLINE"
+        android:textColor="@color/white"
+        android:layout_marginLeft="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/accept_btn"
+        android:layout_toEndOf="@+id/accept_btn"
+        android:layout_marginStart="9dp"
+        android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/estimated_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESTIMATED NET"
+            android:textSize="@dimen/textsize_sp18"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_dp20"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

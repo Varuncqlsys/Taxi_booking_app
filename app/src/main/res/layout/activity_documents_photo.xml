@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Driver License"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_sp18" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/driver_license_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_sp18"
+            android:text="Driver's License"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginTop="@dimen/margin_dp20"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/driver_photo_text"
+            android:layout_below="@+id/driver_license_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_sp18"
+            android:text="@string/document_photo_text"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginTop="@dimen/margin_dp20" />
+
+        <ImageView
+            android:id="@+id/upload_pic"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:src="@drawable/camera"
+            android:layout_margin="@dimen/margin_dp20"
+            android:layout_below="@+id/driver_photo_text"
+            android:layout_above="@+id/take_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginRight="@dimen/margin_dp20"
+            android:layout_marginBottom="@dimen/margin_dp20"
+            android:background="@drawable/dialog1_bg"
+            android:text="take photo"
+            android:layout_above="@+id/save"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textsize_sp18"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_dp20"
+            android:layout_marginRight="@dimen/margin_dp20"
+            android:layout_marginBottom="@dimen/margin_dp20"
+            android:background="@drawable/dialog1_bg"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/textsize_sp18"/>
+
+        </RelativeLayout>
+</LinearLayout>
